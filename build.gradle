@@ -20,16 +20,7 @@ def BINTRAY_ORGINIZATION="guide" //  Your public facing Bintray name. You can se
 def ISSUE_URL="https://github.com/natanfudge/KotlinAwesomePrinter/issues" // A link to an issue tracker for the library, in our example: "https://github.com/natanfudge/KotlinAwesomePrinter/issues"
 def SITE_URL="https://github.com/natanfudge/KotlinAwesomePrinter" // A link to the library's site. In our example: "https://github.com/natanfudge/KotlinAwesomePrinter"
 def VCS_URL="https://github.com/natanfudge/KotlinAwesomePrinter.git" // A link to the version control system (where the code is stored). In our example: "https://github.com/natanfudge/KotlinAwesomePrinter.git"
-
-def POM_LICENSE_NAME="The MIT License" // The name of the license of the library. For example: "The MIT License"
-def POM_LICENSE_URL="https://opensource.org/licenses/MIT" // A link to the license, For example: "https://opensource.org/licenses/MIT"
-def POM_LICENSE_DIST="repo" // Leave as is
-def POM_DEVELOPER_ID="natanfudge" // your name, for example "natanfudge"
-def POM_DEVELOPER_NAME="natanfudge"// your name, for example "natanfudge"
-def POM_ORGANIZATION_NAME="fudge"// The name of your orginization, for example "fudge"
-def POM_ORGANIZATION_URL="https://github.com/natanfudge"
-def POM_DESCRIPTION= "Prints 'Kotlin Is Awesome!'' "// A description of your library, for example "Prints " Kotlin Is Awesome!" "
-def LIBRARY_VERSION_NAME=1.1 // The current version of your library. You will need to update this value whenever you upload a new release. For example: 1.0
+def LIBRARY_VERSION_NAME=1.0 // The current version of your library. You will need to update this value whenever you upload a new release. For example: 1.0
 
 repositories {
     jcenter()
@@ -92,37 +83,8 @@ kotlin {
     }
 }
 
-def pomConfig = {
-    licenses {
-        license {
-            name POM_LICENSE_NAME
-            url POM_LICENSE_URL
-            distribution POM_LICENSE_DIST
-        }
-    }
-    developers {
-        developer {
-            id POM_DEVELOPER_ID
-            name POM_DEVELOPER_NAME
-            organization POM_ORGANIZATION_NAME
-            organizationUrl POM_ORGANIZATION_URL
-        }
-    }
-    scm {
-        url SITE_URL
-    }
-}
-
 afterEvaluate {
     project.publishing.publications.all {
-        pom.withXml {
-            def root = asNode()
-            root.appendNode('name', ARTIFACT_ID)
-            root.appendNode('description', POM_DESCRIPTION)
-            root.appendNode('url', SITE_URL)
-            root.children().last() + pomConfig
-        }
-
         // rename artifacts
         groupId = GROUP_ID
         if (it.name.contains('metadata')) {

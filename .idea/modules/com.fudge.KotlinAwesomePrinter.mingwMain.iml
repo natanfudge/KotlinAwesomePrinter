@@ -4,7 +4,7 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="false" externalProjectId="KotlinAwesomePrinter">
         <sourceSets>
-          <sourceSet>com.example.KotlinAwesomePrinter.commonMain</sourceSet>
+          <sourceSet>com.fudge.KotlinAwesomePrinter.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />

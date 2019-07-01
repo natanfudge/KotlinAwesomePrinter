@@ -2,23 +2,20 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JavaScript " useProjectSettings="false" isTestModule="true" externalProjectId="KotlinAwesomePrinter">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="false" externalProjectId="KotlinAwesomePrinter">
         <sourceSets>
-          <sourceSet>com.example.KotlinAwesomePrinter.jsMain</sourceSet>
-          <sourceSet>com.example.KotlinAwesomePrinter.commonTest</sourceSet>
-          <sourceSet>com.example.KotlinAwesomePrinter.commonMain</sourceSet>
+          <sourceSet>com.fudge.KotlinAwesomePrinter.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
-        <testOutputPath>$MODULE_DIR$/../../build/js/packages/KotlinAwesomePrinter-test/kotlin/KotlinAwesomePrinter-test.js</testOutputPath>
-        <compilerSettings />
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
         <compilerArguments>
-          <option name="outputFile" value="$MODULE_DIR$/../../build/js/packages/KotlinAwesomePrinter-test/kotlin/KotlinAwesomePrinter-test.js" />
+          <option name="destination" value="$MODULE_DIR$/../../build/classes/kotlin/jvm/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.40/2d1d0a2f27fd060787075c69113846803fc27734/kotlin-stdlib-jdk8-1.3.40.jar;C:/Users/natan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.40/2995de8f68444ad47f29e7b59962ac31e6301d7e/kotlin-stdlib-jdk7-1.3.40.jar;C:/Users/natan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.40/b8a521c687329303778548e2f09b0ba5b2665236/kotlin-stdlib-1.3.40.jar;C:/Users/natan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.40/ff8f3da514fc2877d1303d55e22d6da8156c29fb/kotlin-stdlib-common-1.3.40.jar;C:/Users/natan/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
           <option name="noStdlib" value="true" />
-          <option name="sourceMap" value="true" />
-          <option name="metaInfo" value="true" />
-          <option name="target" value="v5" />
-          <option name="moduleKind" value="umd" />
-          <option name="main" value="call" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="KotlinAwesomePrinter" />
           <option name="languageVersion" value="1.3" />
           <option name="apiVersion" value="1.3" />
           <option name="pluginOptions">

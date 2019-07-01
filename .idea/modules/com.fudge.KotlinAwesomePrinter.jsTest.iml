@@ -2,15 +2,17 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JavaScript " useProjectSettings="false" isTestModule="false" externalProjectId="KotlinAwesomePrinter">
+      <configuration version="3" platform="JavaScript " useProjectSettings="false" isTestModule="true" externalProjectId="KotlinAwesomePrinter">
         <sourceSets>
-          <sourceSet>com.example.KotlinAwesomePrinter.commonMain</sourceSet>
+          <sourceSet>com.fudge.KotlinAwesomePrinter.commonMain</sourceSet>
+          <sourceSet>com.fudge.KotlinAwesomePrinter.commonTest</sourceSet>
+          <sourceSet>com.fudge.KotlinAwesomePrinter.jsMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
-        <productionOutputPath>$MODULE_DIR$/../../build/js/packages/KotlinAwesomePrinter/kotlin/KotlinAwesomePrinter.js</productionOutputPath>
+        <testOutputPath>$MODULE_DIR$/../../build/js/packages/KotlinAwesomePrinter-test/kotlin/KotlinAwesomePrinter-test.js</testOutputPath>
         <compilerSettings />
         <compilerArguments>
-          <option name="outputFile" value="$MODULE_DIR$/../../build/js/packages/KotlinAwesomePrinter/kotlin/KotlinAwesomePrinter.js" />
+          <option name="outputFile" value="$MODULE_DIR$/../../build/js/packages/KotlinAwesomePrinter-test/kotlin/KotlinAwesomePrinter-test.js" />
           <option name="noStdlib" value="true" />
           <option name="sourceMap" value="true" />
           <option name="metaInfo" value="true" />
